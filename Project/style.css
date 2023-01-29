@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #FC7300;
+  padding: 5%;
+}
+
+body {
+  font-family: "Bookman", serif;
+  font-size: 85%;
+  color: #333;
+  background-color: #BFDB38;
+  margin: 0;
+  padding: 1em;
+}/*# sourceMappingURL=style.css.map */
