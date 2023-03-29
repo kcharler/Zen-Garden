@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 200" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+	 <style type ="text/css">
+		.leaf {
+			stroke: #F59A44;
+			fill: none;
+		}
+
+		.leafStructure {
+			stroke-width: 2;
+		}
+
+		.leafCore {
+			stroke-width: 3;
+		}
+
+		.leafVeins {
+			stroke-width: 1;
+		}
+	 </style>
+	<symbol id="leaf" viewBox="0 0 100 200">
+    <g id="leaf" class="leaf" stroke= #fff fill = none>
+      <g id="leafStructure" class="leafStructure">
+        <path d="M 75 20 Q 65 65 35 90" />
+		  <path d="M 35 90 Q 0 125 23 160" />
+		  <path d="M 75 20 Q 120 110 23 160" />
+      </g>
+		<g id="leafCore" class="leafCore">
+        <path d="M 75 20 Q 75 110 5 180" />
+      </g>
+		<g id="leafVeins" class="leafVeins">
+        <line x1="70" y1="65" x2="65" y2="50" />
+			<line x1="70" y1="65" x2="85" y2="46" />
+			<line x1="63" y1="90" x2="53" y2="70" />
+			<line x1="63" y1="90" x2="88" y2="62" />
+			<line x1="53" y1="115" x2="37" y2="88" />
+			<line x1="53" y1="115" x2="88" y2="80" />
+			<line x1="38" y1="140" x2="21" y2="108" />
+			<line x1="38" y1="140" x2="82" y2="105" />
+      </g>
+    </g>
+  </symbol>
+
+	<!-- Pattern Definition -->
+	<pattern
+			id="leafPattern"
+			patternUnits="userSpaceOnUse"
+			x="0"
+			y="0"
+			width="100"
+			height="200">
+        <use xlink:href="#leaf"></use>
+    </pattern>
+
+	<!-- Show Test Symbol -->
+	<use xlink:href="#leaf"></use>
+</svg>

@@ -1,0 +1,139 @@
+/* --------------------------------
+	SMALL PARTIAL
+-------------------------------- */
+
+body {
+    min-width: 400px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.preamble h3::before,
+.explanation h3::before,
+.participation h3::before,
+.benefits h3::before,
+.requirements h3::before,
+.preamble h3::after,
+.explanation h3::after,
+.participation h3::after,
+.benefits h3::after,
+.requirements h3::after {
+    content: '';
+    display: inline-block;
+    margin-right: 1%;
+    height: 30px;
+    width: 30px;
+    background: url(/src/img/leaf.svg) center no-repeat;
+    background-size: 22px 22px;
+    transition: all 1s ease-in-out;
+    transform: rotate(-45deg) translateY(5px);
+    animation: leaf 2s linear infinite;
+}
+
+.intro header,
+.summary {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.summary p {
+    margin-top: 2rem;
+}
+
+.preamble,
+.main.supporting,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    margin-top: .5em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.requirements {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.wrapper {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 15px 1.5fr 1fr 15px;
+    grid-template-rows: auto auto 25px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+}
+
+.design-selection {
+    grid-area: 1 / 2 / 3 / 3;
+    padding-left: 6px;
+}
+
+.design-archives {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.zen-resources {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.zen-resources ul {
+    padding: 0;
+    margin: 0;
+}
+
+.zen-resources li {
+    list-style-type: none;
+}
+
+.zen-resources li a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    padding-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}

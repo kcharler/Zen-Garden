@@ -1,0 +1,9 @@
+// Media Query Breakpoints
+$largeScreen: 800px;
+
+// Media Query Mixin
+@mixin mediaQuery($screenSize) {
+  @if $screenSize == large {
+    @media (min-width: $largeScreen) { @content; }
+  }
+}

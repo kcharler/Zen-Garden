@@ -1,0 +1,77 @@
+/* --------------------------------
+	TYPOGRAPHY PARTIAL
+-------------------------------- */
+@import  "variables";
+
+html {
+    /*
+    font-size: 65%;
+    */
+}
+
+body {
+    font-size: 1rem;
+    font-family: $fonts-headline;
+}
+
+h1,
+h2 {
+    font-family: $fonts-body;
+    color: $text-dark;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: $color-3;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: lighten($color-2, 25%);
+    a {
+        color: lighten($color-4, 35%);
+        text-decoration: underline;
+    }
+}
+
+a {
+    text-decoration: underline;
+
+    color: $color-4;
+    &:hover {
+        color: $color-3;
+    }
+    &:active {
+        color: $text-dark;
+        background-color: $color-4;
+    }
+}
+
+footer, aside {
+    font-size: 1.4rem;
+    line-height: 1.4;
+
+    a {
+        color: darken($color-4, 10%);
+    }
+
+    h3 {
+        color: darken($color-3, 10%);
+    }
+}

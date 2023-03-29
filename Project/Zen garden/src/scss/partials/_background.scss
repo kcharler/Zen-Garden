@@ -1,0 +1,19 @@
+/* --------------------------------
+	BACKGROUND PARTIAL
+-------------------------------- */
+
+@import  "variables";
+
+body {
+    background:linear-gradient(135deg, #45b649, #dce35b, #45b649);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+html {
+    background-image: url(/src/img/nature3.svg);
+    padding: 40px;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */;
+}
+
