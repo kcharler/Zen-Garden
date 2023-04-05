@@ -1,0 +1,123 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+.menu-icon {
+	position: absolute;
+	top: 3%;
+	left: 1%;
+	z-index: 150;
+	cursor: pointer;
+	background: transparent;
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	transition: all 0.75s ease;
+}
+
+// set up format of the bars
+%bars {
+	display: block;
+	background: #b1e1c7;
+	width: 35px;
+	height: 5px;
+	margin: 5px 0;
+	transition: all 0.75s ease;
+}
+
+span {
+	@extend %bars;
+	&::after,
+	&::before {
+		content: "";
+		@extend %bars;
+	}
+	// Position the before element
+	&::before {
+		position: relative;
+		top: 8px;
+	}
+	&::after {
+		transform: translateY(-18px); /* Adjust this value to move the third bar up */
+	}
+}
+.menu-icon:hover %bars {
+	background: hotpink;
+}
+//create the movement that changes the three bars into an 'x'
+.menu-icon.open {
+	span::before {
+		transform: rotate(-45deg) translate(10px, -10px);
+		background: #d3d3d3;
+	}
+	span::after {
+		transform: rotate(45deg) translate(-12px, -12px);
+		position: relative;
+		//again, sliding the icon
+		background: #d3d3d3;
+	}
+
+	span {
+		// Hide the main bar.
+		background: transparent;
+	}
+	//move the icon over
+	left: 230px;
+}
+
+.menu-icon:hover span::before,
+.menu-icon:hover span::after {
+	background: #b1e1c7;
+}
+span:not(:hover) {
+	background: hotpink;
+}
+
+.sliding-menu {
+	position: relative;
+	padding-top: 40px;
+	width: 25%;
+	height: 100vh;
+	background: #333333;
+	box-sizing: border-box;
+	left: -300px; //hide menu until transition is activated on click
+	transition: all 0.75s ease;
+}
+.sliding-menu li {
+	list-style-type: none;
+	padding-top: 30px;
+}
+.sliding-menu a {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 30px;
+	color: #d3d3d3;
+	font-size: 1.6em;
+	transition: background-color 0.75s ease-in-out;
+}
+
+.sliding-menu a:hover {
+	transition: all 1s ease;
+	color: #b1e1c7;
+}
+//use the sibling selector to connect the menu to the icon
+.menu-icon.open + .sliding-menu {
+	left: 0px;
+}
+.main-content {
+	display: block;
+	margin: 80px 0 0 200px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-align: center;
+	transition: all 0.75s ease;
+	position: absolute;
+}
+//I am thrilled to have figured out how to get the main page content to both sit in the right spot AND move with the menu slide!!
+.main-content.shifted {
+	transform: translateX(350px);
+	opacity: 0.3; /* Set transparency level to 30%  */
+	transition: all 0.75s ease-in-out;
+}

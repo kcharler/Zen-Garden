@@ -1,0 +1,38 @@
+.card {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.row-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.row-grid img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.col-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 1200px;
+    margin-top: 10px;
+}
+
+.col-grid img {
+    height: calc(100% - 40px);
+    width: 100%;
+    object-fit: cover;
+}

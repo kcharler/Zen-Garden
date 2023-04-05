@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Card Back</title>
+</head>
+<body>
+    <div class="card">
+        <svg class="box">
+          <!-- define pattern -->
+          <defs>
+            <pattern id="card1" patternUnits="userSpaceOnUse" x="24" y="20" width="50" height="50">
+              <circle cx="24" cy="24" width="30" r="25" height="50" class="circle1" />
+              <circle cx="24" cy="24" width="30" r="22" height="50" class="circle2" />
+              <circle cx="24" cy="24" width="30" r="19" height="50" class="circle3" />
+              <circle cx="24" cy="24" width="30" r="15" height="50" class="circle4" />
+      
+              <polygon points="9.9,1.1 3.3,21.78 19.8,8.58 0,8.58 16.5,21.78" class="star" />
+      
+              <polyline points="58,0 10,0" />
+            </pattern>
+          </defs>
+          <!-- use pattern in a rectangle -->
+          <rect x="17.5" y="17.5" width="264" height="395" id="border1" />
+          <rect x="25" y="25" width="250" height="380" rx="20" fill="url(#card1)" ; />
+        </svg>
+      </div>
+      
+      <div class="card">
+        <svg class="box">
+          <!-- define pattern -->
+          <defs>
+            <pattern id="card2" patternUnits="userSpaceOnUse" x="24" y="20" width="50" height="50">
+              <rect x="00" y="0" rx="10" ry="10" width="50" height="50" class="rec1" />
+      
+              <circle cx="12" cy="12" r="8" class="cir" />
+              <circle cx="38" cy="40" r="8" class="cir" />
+      
+              <polygon points="9.9,1.1 3.3,21.78 19.8,8.58 0,8.58 16.5,21.78" class="star" />
+              <polyline points="0,0 0,58" />
+              <polyline points="58,0 0,0" />
+            </pattern>
+          </defs>
+          <!-- use pattern in a rectangle -->
+          <rect x="17.5" y="17.5" rx="2.4" ry="2.5" width="264" height="395" id="border2" />
+      
+          <rect x="25" y="25" width="250" height="380" rx="20" fill="url(#card2)" ; />
+        </svg>
+      </div>
+</body>
+</html>

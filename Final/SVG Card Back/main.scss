@@ -1,0 +1,83 @@
+$width: 305px;
+$height: $width * 1.4;
+
+$color1: orange;
+$color2: white;
+$color3: green;
+
+.card {
+  display: inline-block;
+  border: 1px solid black;
+  width: $width;
+  height: $height;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px black;
+}
+#border1 {
+  fill: white;
+  stroke: $color1;
+  stroke-width: 7.5;
+}
+.box {
+  width: 290px;
+  height: 420px;
+}
+
+#card1 {
+  .star {
+    fill: $color2;
+    stroke: $color3;
+    stroke-width: 1px;
+    transform: translate(14px, 12px);
+  }
+  .circle1 {
+    fill: $color2;
+    stroke: $color1;
+    stroke-width: 1px;
+  }
+  .circle2 {
+    fill: $color2;
+    stroke: $color1;
+    stroke-width: 1px;
+  }
+  .circle3 {
+    fill: $color2;
+    stroke: $color1;
+    stroke-width: 1px;
+  }
+  .circle4 {
+    fill: $color2;
+    stroke: $color1;
+    stroke-width: 1px;
+  }
+  polyline {
+    stroke: $color1;
+    stroke-width: 4px;
+  }
+}
+
+#border2 {
+  fill: $color2;
+  stroke: $color3;
+  stroke-width: 7.5;
+}
+
+#card2 {
+  .rec1 {
+    fill: $color3;
+  }
+  .cir {
+    fill: $color2;
+    stroke: $color3;
+    stroke-width: 2px;
+  }
+  polyline {
+    stroke: $color2;
+    stroke-width: 4px;
+  }
+  .star {
+    fill: $color1;
+    transform: translate(14px, 12px);
+  }
+}

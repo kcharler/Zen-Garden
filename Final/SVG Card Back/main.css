@@ -1,0 +1,74 @@
+.card {
+  display: inline-block;
+  border: 1px solid black;
+  width: 305px;
+  height: 427px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px black;
+}
+
+#border1 {
+  fill: white;
+  stroke: orange;
+  stroke-width: 7.5;
+}
+
+.box {
+  width: 290px;
+  height: 420px;
+}
+
+#card1 .star {
+  fill: white;
+  stroke: green;
+  stroke-width: 1px;
+  transform: translate(14px, 12px);
+}
+#card1 .circle1 {
+  fill: white;
+  stroke: orange;
+  stroke-width: 1px;
+}
+#card1 .circle2 {
+  fill: white;
+  stroke: orange;
+  stroke-width: 1px;
+}
+#card1 .circle3 {
+  fill: white;
+  stroke: orange;
+  stroke-width: 1px;
+}
+#card1 .circle4 {
+  fill: white;
+  stroke: orange;
+  stroke-width: 1px;
+}
+#card1 polyline {
+  stroke: orange;
+  stroke-width: 4px;
+}
+
+#border2 {
+  fill: white;
+  stroke: green;
+  stroke-width: 7.5;
+}
+
+#card2 .rec1 {
+  fill: green;
+}
+#card2 .cir {
+  fill: white;
+  stroke: green;
+  stroke-width: 2px;
+}
+#card2 polyline {
+  stroke: white;
+  stroke-width: 4px;
+}
+#card2 .star {
+  fill: orange;
+  transform: translate(14px, 12px);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,117 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  z-index: 150;
+  cursor: pointer;
+  background: transparent;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.75s ease;
+}
+
+span::after, span::before, span {
+  display: block;
+  background: #b1e1c7;
+  width: 35px;
+  height: 5px;
+  margin: 5px 0;
+  transition: all 0.75s ease;
+}
+
+span::after, span::before {
+  content: "";
+}
+span::before {
+  position: relative;
+  top: 8px;
+}
+span::after {
+  transform: translateY(-18px); /* Adjust this value to move the third bar up */
+}
+
+.menu-icon:hover span, .menu-icon:hover span::after, .menu-icon:hover span::before {
+  background: hotpink;
+}
+
+.menu-icon.open {
+  left: 230px;
+}
+.menu-icon.open span::before {
+  transform: rotate(-45deg) translate(10px, -10px);
+  background: #d3d3d3;
+}
+.menu-icon.open span::after {
+  transform: rotate(45deg) translate(-12px, -12px);
+  position: relative;
+  background: #d3d3d3;
+}
+.menu-icon.open span {
+  background: transparent;
+}
+
+.menu-icon:hover span::before,
+.menu-icon:hover span::after {
+  background: #b1e1c7;
+}
+
+span:not(:hover) {
+  background: hotpink;
+}
+
+.sliding-menu {
+  position: relative;
+  padding-top: 40px;
+  width: 25%;
+  height: 100vh;
+  background: #333333;
+  box-sizing: border-box;
+  left: -300px;
+  transition: all 0.75s ease;
+}
+
+.sliding-menu li {
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+.sliding-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 30px;
+  color: #d3d3d3;
+  font-size: 1.6em;
+  transition: background-color 0.75s ease-in-out;
+}
+
+.sliding-menu a:hover {
+  transition: all 1s ease;
+  color: #b1e1c7;
+}
+
+.menu-icon.open + .sliding-menu {
+  left: 0px;
+}
+
+.main-content {
+  display: block;
+  margin: 80px 0 0 200px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.75s ease;
+  position: absolute;
+}
+
+.main-content.shifted {
+  transform: translateX(350px);
+  opacity: 0.3; /* Set transparency level to 30%  */
+  transition: all 0.75s ease-in-out;
+}/*# sourceMappingURL=slide.css.map */
